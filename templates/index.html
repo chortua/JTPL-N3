@@ -3,56 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
-    <!-- <link rel="stylesheet" href="main.css"> -->
-    <title>Japanse JTPL N3 Practice</title>
+     <!--<link rel="stylesheet" href="main.css">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japanse JLPT N3 Practice</title>
 </head>
 <body>
     <div class="whole">
-        <div class="top"><h1 align="middle" style="font-size:3em; color: rgba(0, 0, 0, 0.5);" > Japanese JTPL N3 Practice</h1></div>
+        <div class="top">
+            <h1 align="right" style="font-size:6em; color: rgba(0, 0, 0, 0.1 );padding: 60px;" >
+            JLPT N3 </h1>
+        </div>
 
         <div class="middle">
             <h1 style="font-size:2.5em;">山本さんはクラスの代表に選ばれた</h1>
-            <div>
-            <form action="choices">
-                <input type="radio" id="a" name="choices" value="a">
-                <label for="a">たいひょう</label><br>
-                <input type="radio" id="b" name="choices" value="b">
-                <label for="b">だいひょ</label><br>
-                <input type="radio" id="c" name="choices" value="c">
-                <label for="c">だいひょう</label><br>
-                <input type="radio" id="d" name="choices" values="d">
-                <label for="d">たいひょ</label><br><br>
-            </form>
-            </div>
-            <div >
-                <button type="submit">Submit</button>
-            </div>
+            <div style="padding-left:30px;">
+                <form action="/" method="post">
+                    <input type="radio" id="a" name="choices" value="a">
+                    <label for="a">たいひょう</label><br>
+                    <input type="radio" id="b" name="choices" value="b">
+                    <label for="b">だいひょ</label><br>
+                    <input type="radio" id="c" name="choices" value="c">
+                    <label for="c">だいひょう</label><br>
+                    <input type="radio" id="d" name="choices" value="d">
+                    <label for="d">たいひょ</label><br><br>
+                    <input class="button button5" type="submit" value="Submit">
 
+                 </form>
+            </div>
         </div>
         <div class="bottom">
-            <div class="l1">
+            <!-- Left side of the Kanji -->
+            <div class="l1" >
                 <div class="l1kanji"><h1 align="middle">山本</h1></div>
-                <div class="l1def">やまもと</div>
+                <div class="l1def">
+                    <h4>やまもと</h4>
+                    <h4>やまもと</h4>
+                    <h4>やまもと</h4>
+                </div>
+
             </div>
-            <div class="l2">
-                <div class="l2kanji"><h1>山本</h1></div>
-                <div class="l2def">やまもと</div>
+            <div class="l1" style="top: 100px;">
+                <div class="l1kanji" ><h1 align="middle">山本</h1></div>
+                <div class="l1def">
+                    <h4>やまもと</h4>
+                    <h4>やまもと</h4>
+                    <h4>やまもと</h4>
+                </div>
             </div>
-            <div class="l3">
-                <div class="l3kanji"><h1>山本</h1></div>
-                <div class="l3def">やまもと</div>
+            <div class="l1" style="top: 200px;">
+                <div class="l1kanji"><h1 align="middle">山本</h1></div>
+                <div class="l1def">
+                    <h4>やまもと</h4>
+                    <h4>やまもと</h4>
+                    <h4>やまもと</h4>
+                </div>
             </div>
+
+            <!-- Right side of the Kanji -->
             <div class="r1">
-                <div class="r1kanji"><h1 align="middle">山本</h1></div>
-                <div class="r1def">やまもと</div>
+                <div class="l1kanji"><h1 align="middle">山本</h1></div>
+                <div class="l1def">
+                    <h4>やまもと</h4>
+                    <h4>やまもと</h4>
+                    <h4>やまもと</h4>
+                </div>
             </div>
-            <div class="r2">
-                <div class="r2kanji"><h1>山本</h1></div>
-                <div class="r2def">やまもと</div>
+            <div class="r1" style="top: 100px;">
+                <div class="l1kanji"><h1 align="middle">山本</h1></div>
+                <div class="l1def">
+                    <h4>やまもと</h4>
+                    <h4>やまもと</h4>
+                    <h4>やまもと</h4>
+                </div>
             </div>
-            <div class="r3">
-                <div class="r3kanji"><h1>山本</h1></div>
-                <div class="r3def">やまもと</div>
+            <div class="r1" style="top: 200px;">
+                <div class="l1kanji"><h1 align="middle">山本</h1></div>
+                <div class="l1def">
+                    <h4>やまもと</h4>
+                    <h4>やまもと</h4>
+                    <h4>やまもと</h4>
+                </div>
             </div>
 
 
