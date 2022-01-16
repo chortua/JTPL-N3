@@ -1,0 +1,162 @@
+body { }
+.whole{ position: relative; }
+
+.top {
+    position: absolute;
+    top: 0px;
+    height: 100px;
+    width: 100%;
+    background-color: white;
+}
+
+input[type="radio"]:checked {box-shadow: 0 0 0 3px brown;}
+label { color: black; font-size: 1.8em; }
+
+.middle {
+    position: absolute;
+    top:150px;
+    left:300px;
+    height: 400px;
+    width:100%;
+
+}
+
+/* bottom part will have all the Kanji characters */
+.bottom {
+    position: relative;
+    top:550px;
+    height: 300px;
+    width: 100%;
+    background-color: lightblue;
+}
+/* Left part of Kanji section */
+.l1 {
+position:absolute;
+left:3%;
+height: 100px;
+width: 45%;
+background-color:red;
+}
+.l1kanji{
+position:absolute;
+width:100px;
+height:100%;
+background-color: green;
+}
+.l1def{
+position: absolute;
+left:100px;
+height: 100%;
+width:80%;
+background-color: yellow;
+
+}
+.l2 {
+position:absolute;
+top:100px;
+left:3%;
+height: 100px;
+width: 45%;
+background-color:blue;
+}
+.l2kanji{
+position:absolute;
+width:100px;
+height:100%;
+background-color: green;
+}
+.l2def{
+position: absolute;
+left:100px;
+height: 100%;
+width:80%;
+background-color: yellow;
+}
+.l3 {
+position:absolute;
+top:200px;
+left:3%;
+height: 100px;
+width: 45%;
+background-color:red;
+}
+.l3kanji{
+position:absolute;
+width:100px;
+height:100%;
+background-color: green;
+}
+.l3def{
+position: absolute;
+left:100px;
+height: 100%;
+width:80%;
+background-color: yellow;
+}
+/* right part of the Kanji section */
+.r1 {
+position:absolute;
+left:50%;
+height: 100px;
+width: 50%;
+background-color:red;
+}
+
+.r1kanji{
+position:absolute;
+width:100px;
+height:100%;
+background-color: green;
+}
+.r1def{
+position: absolute;
+left:100px;
+height: 100%;
+width:80%;
+background-color: yellow;
+}
+.r2 {
+position:absolute;
+top:100px;
+left:50%;
+height: 100px;
+width: 50%;
+background-color:blue;
+}
+
+.r2kanji{
+position:absolute;
+width:100px;
+height:100%;
+background-color: green;
+}
+.r2def{
+position: absolute;
+left:100px;
+height: 100%;
+width:80%;
+background-color: yellow;
+}
+.r3 {
+position:absolute;
+top:200px;
+left: 50%;
+height: 100px;
+width: 50%;
+background-color:red;
+}
+
+.r3kanji{
+position:absolute;
+width:100px;
+height:100%;
+background-color: green;
+}
+.r3def{
+position: absolute;
+left:100px;
+height: 100%;
+width:80%;
+background-color: yellow;
+}
+
