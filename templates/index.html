@@ -7,31 +7,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Japanse JLPT N3 Practice</title>
 </head>
-<body>
+<body style="background-color:{{color}};">
     <div class="whole">
-        <div class="top">
+        <div class="top" style="background-color:{{color}};">
             <h1 align="right" style="font-size:6em; color: rgba(0, 0, 0, 0.1 );padding: 60px;" >
             JLPT N3 </h1>
         </div>
 
-        <div class="middle">
-            <h1 style="font-size:2.5em;">{{questions[0]}}</h1>
+        <div class="middle" >
+            <h1 style="font-size:2.5em;">{{questions[1]}}</h1>
             <div style="padding-left:30px;">
                 <form action="/" method="post">
-                    <input type="radio" id="a" name="choices" value="a">
-                    <label for="a">{{questions[1]}}</label><br>
-                    <input type="radio" id="b" name="choices" value="b">
-                    <label for="b">{{questions[2]}}</label><br>
-                    <input type="radio" id="c" name="choices" value="c">
-                    <label for="c">{{questions[3]}}</label><br>
-                    <input type="radio" id="d" name="choices" value="d">
-                    <label for="d">{{questions[4]}}</label><br><br>
+                    <input type="radio" id="a" name="choices" value={{questions[2]}}>
+                    <label for="a">{{questions[2]}}</label><br>
+                    <input type="radio" id="b" name="choices" value={{questions[3]}}>
+                    <label for="b">{{questions[3]}}</label><br>
+                    <input type="radio" id="c" name="choices" value={{questions[4]}}>
+                    <label for="c">{{questions[4]}}</label><br>
+                    <input type="radio" id="d" name="choices" value={{questions[5]}}>
+                    <label for="d">{{questions[5]}}</label><br><br>
+                    <input type="hidden" name="rowid" value={{questions[0]}}>
+                    <input type="hidden" name="answer" value="{{questions[6]}}">
                     <input class="button button5" type="submit" value="Submit">
 
                  </form>
             </div>
         </div>
         <div class="bottom">
+            <h2 align="middle">{{text}}</h2>
             <!-- Left side of the Kanji
             <div class="l1" >
                 <div class="l1kanji"><h1 align="middle">山本</h1></div>

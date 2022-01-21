@@ -13,11 +13,21 @@ def jlpt_data():
     c = conn.cursor()
     total = rows_in_table() # Get the number of rows in the table.
     number = random.randint(1, total)
-    c.execute("SELECT * FROM jlpt WHERE rowid = (?)", (number,))
+    c.execute("SELECT rowid, * FROM jlpt WHERE rowid = (?)", (number,))
     data_with_questions = c.fetchone()
     conn.commit()
     conn.close()
     return data_with_questions
+
+def try_again(rowid):
+    conn = sqlite3.connect('jlpt.db')
+    c = conn.cursor()
+    c.execute("SELECT rowid, * FROM jlpt WHERE rowid = (?)", (rowid,))
+    data_with_questions = c.fetchone()
+    conn.commit()
+    conn.close()
+    return data_with_questions
+
 
 def add_question(phrase, ans_a, ans_b, ans_c, ans_d, answer):
     conn = sqlite3.connect('jlpt.db')
